@@ -34,6 +34,7 @@
                 <p>Мы предлагаем вам самые вкусные напитки и десерты в уютной атмосфере.</p>
                 <p>CoffeeDream — это уютная кофейня, где каждый напиток и десерт готовятся с любовью. Мы стремимся создать атмосферу уюта и тепла, чтобы каждый визит был приятным и незабываемым. Здесь вы всегда можете насладиться ароматным кофе и свежими десертами, а также найти отдых от суеты. Добро пожаловать в мир вкуса и уюта!</p>
                 <img src="кафе.jpeg" alt="CoffeeDream Cafe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xTJGrFheNcY?si=feRPj4ku8s3VZA8V"  width="80%" max-width="400px" margin-top="20px"; border-radius="8px" style="border:0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -51,7 +52,7 @@
                         <p>1200/1800 тг</p>
                     </div>
                     <div class="menu-item">
-                        <img src="эспрессо.png" alt="coffee">
+                        <img src="эспрессо1.jpeg" alt="coffee">
                         <h3>Эспрессо</h3>
                         <p> 35 мл</p>
                         <p>1000 тг</p>
@@ -63,19 +64,19 @@
                         <p>1500/2000 тг</p>
                     </div>
                      <div class="menu-item">
-                        <img src="латте.jpg" alt="coffee">
+                        <img src="латте11.jpg" alt="coffee">
                         <h3>Латте</h3>
                         <p> 300/400 мл</p>
                         <p>1800/2300 тг </p>
                     </div>
                     <div class="menu-item">
-                        <img src="флэт уайт.webp" alt="coffee">
+                        <img src="флэт уайт1.webp" alt="coffee">
                         <h3>Флэт Уайт</h3>
                         <p>200 мл </p>
                         <p>1500тг</p>
                     </div>
                     <div class="menu-item">
-                        <img src="американо.jpg" alt="coffee">
+                        <img src="раф.png" alt="coffee">
                         <h3>Раф</h3>
                         <p> 300/400 мл</p>
                         <p>2000/2500 тг</p>
@@ -215,10 +216,11 @@
         <section id="contacts">
             <div class="container">
                 <h2>Контакты</h2>
-                <p>Адрес: ул. Майкайын, 1</p>
+                <p>Адрес: ул. Розыбакиева, 7/7</p>
                 <p>Телефон: +7 (775) 09 404 09</p>
                 <p>Часы работы: с 9:00 до 21:00</p>
                 <p>Социальные сети: <a href="https://instagram.com" target="_blank">Instagram</a></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.240790192277!2d76.88584637601829!3d43.24637507112432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883696c96f3d4b5%3A0x1890fab74df3048c!2z0YPQu9C40YbQsCDQoNC-0LfRi9Cx0LDQutC40LXQstCwIDcsINCQ0LvQvNCw0YLRiw!5e0!3m2!1sru!2skz!4v1741797171709!5m2!1sru!2skz" width="80%" max-width="400px" margin-top="20px"; border-radius="8px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
@@ -237,18 +239,65 @@
                     <input type="text" id="address" name="address" required>
 
                     <label for="order">Выберите товар</label>
-                    <select id="order" name="order">
-                        <option value="coffee">Кофе</option>
-                        <option value="dessert">Десерт</option>
-                        <option value="limonade">Лимонад</option>
-                        <option value="tea">Чай</option>
-                        <option value="dessert">Выпечка</option>
+                    <select id="order" name="order" multiple>
+                        <optgroup label="Кофе">
+                            <option value="coffee" data-price="1800">Капучино</option>
+                            <option value="coffee" data-price="1000">Эспрессо</option>
+                            <option value="coffee" data-price="2000">Американо</option>
+                            <option value="coffee" data-price="2300">Латте</option>
+                            <option value="coffee"data-price="1500">Флэт Уайт</option>
+                            <option value="coffee"data-price="2500">Раф</option>
+                        </optgroup>
+                        <optgroup label="Десерт">
+                            <option value="dessert" data-price="850">Безе</option>
+                            <option value="dessert" data-price="900">Панакота</option>
+                            <option value="dessert" data-price="600">Тёмный шоколад</option>
+                            <option value="dessert" data-price="600">Молочный шоколад</option>
+                            <option value="dessert" data-price="750">Фруктовый торт</option>
+                            <option value="dessert" data-price="1200">Чизкейк Нью-Йорк</option>
+                            <option value="dessert" data-price="1200">Чизкейк с малиной</option>
+                        </optgroup>
+                        <optgroup label="Лимонад">
+                            <option value="limonade"data-price="500">Арбузный</option>
+                            <option value="limonade"data-price="500">Клубничный</option>
+                            <option value="limonade"data-price="500">Ягодный</option>
+                            <option value="limonade" data-price="500">Классический</option>
+                        </optgroup>
+                        <optgroup label="Чай">
+                            <option value="tea" data-price="800">Пряный чай латте</option>
+                            <option value="tea" data-price="1000">Облепиха-Маракуйя</option>
+                            <option value="tea" data-price="1000">Черная смородина</option>
+                            <option value="tea" data-price="800">Малина-клубника</option>
+                        </optgroup>
+                        <optgroup label="Выпечка">
+                            <option value="dessert" data-price="600">Круассан без начинкой</option>
+                            <option value="dessert" data-price="1200">Сэндвич круассан</option>
+                            <option value="dessert" data-price="850">Круассан с шоколадом</option>
+                            <option value="dessert"data-price="1500">Круассан с семгой</option>
+                        </optgroup>
                     </select>
+                    <p id="total">Итого: 0 тг</p>
 
                     <button type="submit">Оформить заказ</button>
                 </form>
             </div>
         </section>
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const orderSelect = document.getElementById('order');
+        const totalElement = document.getElementById('total');
+
+        function calculateTotal() {
+            let total = 0;
+            for (const option of orderSelect.selectedOptions) {
+                total += parseInt(option.getAttribute('data-price')) || 0;
+            }
+            totalElement.textContent = `Итого: ${total} тг`;
+        }
+
+        orderSelect.addEventListener('change', calculateTotal);
+    });
+</script>
     </main>
 
     
